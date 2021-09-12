@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ForbiddenMobs">
+    <output-path>$PROJECT_DIR$/../PluginTestServer/plugins</output-path>
+    <root id="archive" name="ForbiddenMobs.jar">
+      <element id="module-output" name="ForbiddenMobs" />
+    </root>
+  </artifact>
+</component>
