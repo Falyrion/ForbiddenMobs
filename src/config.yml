@@ -5,13 +5,13 @@
 #   overfill your server.
 
 # Zombie Horses
-zombieHorseSpawnRate: 0.01
+zombieHorseSpawnRate: 1
 
 # Illusioner
-illusionerSpawnRate: 0.05
+illusionerSpawnRate: 1
 
 # Vindicator
-vindicatorSpawnRate: 0.05
+vindicatorSpawnRate: 1
 
 # Evocer
-evocerSpawnRate: 0.05
+evocerSpawnRate: 1

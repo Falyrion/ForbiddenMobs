@@ -1,9 +1,7 @@
 package com.falyrion.forbiddenmobs;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.EntityType;
-import org.bukkit.entity.Rabbit;
 import org.bukkit.entity.Zombie;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -38,9 +36,12 @@ public class SpawnEvents implements Listener {
                 if (random <= ForbiddenMobsMain.getInstance().evocerSpawnRate) {
                     Location location = event.getLocation();
                     event.getLocation().getWorld().spawnEntity(location, EntityType.ZOMBIE_HORSE);
+
+                    System.out.println("loaction:" + location.toString());
                 }
             }
 
+            /*
             if (ForbiddenMobsMain.getInstance().illusionerSpawnRate > 0) {
                 double random = Math.random();
                 if (random <= ForbiddenMobsMain.getInstance().illusionerSpawnRate) {
@@ -50,6 +51,7 @@ public class SpawnEvents implements Listener {
 
                 }
             }
+            */
         }
 
     }
