@@ -1,8 +1,17 @@
 
-# Zombie Horses
-# - Set to 0 to disable all zombie horse spawning
+
+# - Set to 0 to disable additional spawning of that mob
 # - Note: Zombie Horses are normal animals and do not burn in daylight. Keep the spawn rate low if you don't want to
 #   overfill your server.
+
+# Zombie Horses
 zombieHorseSpawnRate: 0.01
 
+# Illusioner
 illusionerSpawnRate: 0.05
+
+# Vindicator
+vindicatorSpawnRate: 0.05
+
+# Evocer
+evocerSpawnRate: 0.05

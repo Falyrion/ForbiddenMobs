@@ -15,8 +15,10 @@ public class ForbiddenMobsMain extends JavaPlugin implements Listener {
         return instance;
     }
 
-    public double zombieHorseRate;
-    public double illusionerRate;
+    public double zombieHorseSpawnRate;
+    public double illusionerSpawnRate;
+    public double vindicatorSpawnRate;
+    public double evocerSpawnRate;
     FileConfiguration config = getConfig();
 
 
@@ -25,13 +27,14 @@ public class ForbiddenMobsMain extends JavaPlugin implements Listener {
 
         this.saveDefaultConfig();
 
-        zombieHorseRate = config.getDouble("zombieHorseSpawnRate");
-        illusionerRate = config.getDouble("illusionerSpawnRate");
+        zombieHorseSpawnRate = config.getDouble("zombieHorseSpawnRate");
+        illusionerSpawnRate = config.getDouble("illusionerSpawnRate");
+        vindicatorSpawnRate = config.getDouble("vindicatorSpawnRate");
+        evocerSpawnRate = config.getDouble("evocerSpawnRate");
 
         Bukkit.getServer().getPluginManager().registerEvents(new SpawnEvents(), this);
 
         System.out.println("[ForbiddenMobs] enabled v1.0.0.0 for bukkit 1.17+");
-
     }
 
     @Override

@@ -17,33 +17,41 @@ public class SpawnEvents implements Listener {
 
         if (event.getEntity() instanceof Zombie) {
 
-            if (ForbiddenMobsMain.getInstance().zombieHorseRate > 0) {
+            if (ForbiddenMobsMain.getInstance().zombieHorseSpawnRate > 0) {
                 double random = Math.random();
-                if (random <= ForbiddenMobsMain.getInstance().zombieHorseRate) {
+                if (random <= ForbiddenMobsMain.getInstance().zombieHorseSpawnRate) {
                     Location location = event.getLocation();
                     event.getLocation().getWorld().spawnEntity(location, EntityType.ZOMBIE_HORSE);
                 }
             }
 
-            if (ForbiddenMobsMain.getInstance().illusionerRate > 0) {
+            if (ForbiddenMobsMain.getInstance().vindicatorSpawnRate > 0) {
                 double random = Math.random();
-                if (random <= ForbiddenMobsMain.getInstance().illusionerRate) {
+                if (random <= ForbiddenMobsMain.getInstance().vindicatorSpawnRate) {
+                    Location location = event.getLocation();
+                    event.getLocation().getWorld().spawnEntity(location, EntityType.ZOMBIE_HORSE);
+                }
+            }
+
+            if (ForbiddenMobsMain.getInstance().evocerSpawnRate > 0) {
+                double random = Math.random();
+                if (random <= ForbiddenMobsMain.getInstance().evocerSpawnRate) {
+                    Location location = event.getLocation();
+                    event.getLocation().getWorld().spawnEntity(location, EntityType.ZOMBIE_HORSE);
+                }
+            }
+
+            if (ForbiddenMobsMain.getInstance().illusionerSpawnRate > 0) {
+                double random = Math.random();
+                if (random <= ForbiddenMobsMain.getInstance().illusionerSpawnRate) {
                     Location location = event.getLocation();
 
                     Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "/summon illusioner " + location.toString());
 
                 }
             }
-
-
-
-
-
-        } else if (event.getEntity() instanceof Rabbit) {
-
-
-
         }
+
     }
 
 
