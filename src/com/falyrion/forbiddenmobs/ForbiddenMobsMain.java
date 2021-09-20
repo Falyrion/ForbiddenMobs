@@ -21,6 +21,11 @@ public class ForbiddenMobsMain extends JavaPlugin implements Listener {
     public double evocerSpawnRate;
     FileConfiguration config = getConfig();
 
+    public void owjej() {
+        getServer().getWorld("world").getChunkAt(1, 1).getBlock(1, 1, 1).getBiome();
+
+    }
+
 
     @Override
     public void onEnable() {
