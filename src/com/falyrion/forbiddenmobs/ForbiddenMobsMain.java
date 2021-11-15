@@ -5,6 +5,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
+
 public class ForbiddenMobsMain extends JavaPlugin implements Listener {
 
     // Zombie Horse, mansion mobs (evoker, vindicator), ravanger, illusioner, killer bunny (on rabbit spawn)
