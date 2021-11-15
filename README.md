@@ -15,8 +15,8 @@ These unused mobs are:
 Additionally, you have the option to increase the spawn rates of rare mobs:
 
 - **Vindicator** (very rare in vanilla game, there only in woodland mansions and raids)
-- **Evocer** (very rare in vanilla game, there only in woodland mansions and raids)
-- **Ravanger** (very rare in vanilla game, there only in woodland mansions and raids)
+- **Evoker** (very rare in vanilla game, there only in woodland mansions and raids)
+- **Ravager** (very rare in vanilla game, there only in woodland mansions and raids)
 
 # Config of this plugin
 

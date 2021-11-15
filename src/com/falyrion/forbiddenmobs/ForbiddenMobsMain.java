@@ -18,13 +18,9 @@ public class ForbiddenMobsMain extends JavaPlugin implements Listener {
     public double zombieHorseSpawnRate;
     public double illusionerSpawnRate;
     public double vindicatorSpawnRate;
-    public double evocerSpawnRate;
+    public double evokerSpawnRate;
+    public double ravagerSpawnRate;
     FileConfiguration config = getConfig();
-
-    public void owjej() {
-        getServer().getWorld("world").getChunkAt(1, 1).getBlock(1, 1, 1).getBiome();
-
-    }
 
 
     @Override
@@ -35,7 +31,8 @@ public class ForbiddenMobsMain extends JavaPlugin implements Listener {
         zombieHorseSpawnRate = config.getDouble("zombieHorseSpawnRate");
         illusionerSpawnRate = config.getDouble("illusionerSpawnRate");
         vindicatorSpawnRate = config.getDouble("vindicatorSpawnRate");
-        evocerSpawnRate = config.getDouble("evocerSpawnRate");
+        evokerSpawnRate = config.getDouble("evokerSpawnRate");
+        ravagerSpawnRate = config.getDouble("ravagerSpawnRate");
 
         Bukkit.getServer().getPluginManager().registerEvents(new SpawnEvents(), this);
 

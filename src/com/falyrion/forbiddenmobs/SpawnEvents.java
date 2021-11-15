@@ -15,6 +15,7 @@ public class SpawnEvents implements Listener {
 
         if (event.getEntity() instanceof Zombie) {
 
+            // Spawn zombie horse
             if (ForbiddenMobsMain.getInstance().zombieHorseSpawnRate > 0) {
                 double random = Math.random();
                 if (random <= ForbiddenMobsMain.getInstance().zombieHorseSpawnRate) {
@@ -23,35 +24,43 @@ public class SpawnEvents implements Listener {
                 }
             }
 
+            // Spawn vindicator
             if (ForbiddenMobsMain.getInstance().vindicatorSpawnRate > 0) {
                 double random = Math.random();
                 if (random <= ForbiddenMobsMain.getInstance().vindicatorSpawnRate) {
                     Location location = event.getLocation();
-                    event.getLocation().getWorld().spawnEntity(location, EntityType.ZOMBIE_HORSE);
+                    event.getLocation().getWorld().spawnEntity(location, EntityType.VINDICATOR);
                 }
             }
 
-            if (ForbiddenMobsMain.getInstance().evocerSpawnRate > 0) {
+            // Spawn evoker
+            if (ForbiddenMobsMain.getInstance().evokerSpawnRate > 0) {
                 double random = Math.random();
-                if (random <= ForbiddenMobsMain.getInstance().evocerSpawnRate) {
+                if (random <= ForbiddenMobsMain.getInstance().evokerSpawnRate) {
                     Location location = event.getLocation();
-                    event.getLocation().getWorld().spawnEntity(location, EntityType.ZOMBIE_HORSE);
-
-                    System.out.println("loaction:" + location.toString());
+                    event.getLocation().getWorld().spawnEntity(location, EntityType.EVOKER);
                 }
             }
 
-            /*
+            // Spawn illusioner
             if (ForbiddenMobsMain.getInstance().illusionerSpawnRate > 0) {
                 double random = Math.random();
                 if (random <= ForbiddenMobsMain.getInstance().illusionerSpawnRate) {
                     Location location = event.getLocation();
-
-                    Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "/summon illusioner " + location.toString());
-
+                    event.getLocation().getWorld().spawnEntity(location, EntityType.ILLUSIONER);
                 }
             }
-            */
+
+            // Spawn ravager
+            if (ForbiddenMobsMain.getInstance().ravagerSpawnRate > 0) {
+                double random = Math.random();
+                if (random <= ForbiddenMobsMain.getInstance().ravagerSpawnRate) {
+                    Location location = event.getLocation();
+                    event.getLocation().getWorld().spawnEntity(location, EntityType.RAVAGER);
+                }
+            }
+
+
         }
 
     }
