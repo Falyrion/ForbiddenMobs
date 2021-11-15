@@ -2,6 +2,8 @@
 
 This is a plugin for CraftBukkit/ Spigot 1.17+.
 
+THIS PLUGIN IS STILL WORK IN PROGRESS.
+
 # Overview 
 
 ForbiddenMobs allows rare or disabled vanilla mobs to spawn more often or spawn at all. You can set up the spawn rate of
