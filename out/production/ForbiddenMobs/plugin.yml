@@ -1,7 +1,0 @@
-name: ForbiddenMobs
-author: Falyrion
-description: Spawn mobs naturally that are not enabled in the game by default
-version: 1.0.0.0
-api-version: 1.17
-
-main: com.falyrion.forbiddenmobs.ForbiddenMobsMain
