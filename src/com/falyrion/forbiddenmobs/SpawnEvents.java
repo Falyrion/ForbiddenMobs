@@ -65,6 +65,4 @@ public class SpawnEvents implements Listener {
 
     }
 
-
-
 }

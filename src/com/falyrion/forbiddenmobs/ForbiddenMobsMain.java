@@ -20,6 +20,7 @@ public class ForbiddenMobsMain extends JavaPlugin implements Listener {
     public double vindicatorSpawnRate;
     public double evokerSpawnRate;
     public double ravagerSpawnRate;
+
     FileConfiguration config = getConfig();
 
 
