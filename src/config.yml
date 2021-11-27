@@ -6,8 +6,8 @@
 #   overfill your server.
 
 # Spawnrate values
-zombieHorseSpawnRate: 1
-illusionerSpawnRate: 1
-vindicatorSpawnRate: 1
-evokerSpawnRate: 1
-ravagerSpawnRate: 1
+zombieHorseSpawnRate: 0.01
+illusionerSpawnRate: 0.01
+vindicatorSpawnRate: 0.03
+evokerSpawnRate: 0.03
+ravagerSpawnRate: 0.005
