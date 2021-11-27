@@ -31,6 +31,8 @@ public class ForbiddenMobsMain extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
 
+        instance = this;
+
         this.saveDefaultConfig();
 
         zombieHorseSpawnRate = config.getDouble("zombieHorseSpawnRate");
